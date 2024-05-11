@@ -7,7 +7,7 @@
     <style>
         html,body{
            overflow-x: hidden;
-           overflow-y: hidden;
+           /* overflow-y: hidden; */
            background-image: url(image/images\ \(12\).jpeg);
             background-repeat: no-repeat;
             background-position: center;
@@ -35,15 +35,16 @@
            
             
         }
-       @media(max-width: 768px) {
+       @media screen and (min-width: 388px) and (max-width: 812px) {
         div{
             margin: 0;
             
         }
         button{
-            width: 40px;
-            height: 40px;
+            width: 20px;
+            height: 20px;
             border-radius: 0cap;
+            padding: none;
         }
         p{
             text-align: center;
