@@ -20,11 +20,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            justify-content: center;
         }
-     div{
-        margin-left: 40%;
-        
-     }
         button[type="button"] {
             width: 80px;
             height: 80px;
@@ -33,6 +30,10 @@
             margin: 5px;
             border: none;
             box-shadow: 20px;
+            text-align: center;
+        }
+        div{
+            margin-left: 38%;
         }
         input[type="text"] {
             width: 373px;
@@ -40,20 +41,55 @@
            
             
         }
-       @media screen and (min-width: 388px) and (max-width: 812px) {
+       @media screen and (min-width: 288px) and (max-width: 368px) {
+        button[type="button"]{
+            width: 65px;
+            height: 65px;
+            font-size: 10px;
+            padding: 15px;
+            margin: 5px;
+            box-shadow: 20px;
+            align-self: start;
+        }
+        input[type="text"]{
+            width: 100%;
+        }
         div{
             margin-left: 0;
-            padding-left: 0;
-            
         }
-        button{
-            width: 20px;
-            height: 20px;
-            border-radius: 0cap;
-            padding: none;
+       }
+       @media screen and (min-width: 368px) and (max-width: 878px) {
+        button[type="button"]{
+            width: 80px;
+            height: 80px;
+            font-size: 20px;
+            padding: 15px;
+            margin: 5px;
+            box-shadow: 20px;
+            align-self: start;
         }
-        p{
-            text-align: center;
+        input[type="text"]{
+            width: 100%;
+        }
+        div{
+            margin-left: 0;
+        }
+       }
+       @media screen and (min-width: 878px) and (max-width: 878px) {
+        button[type="button"]{
+            width: 50px;
+            height: 50px;
+            font-size: 10px;
+            padding: 15px;
+            margin: 5px;
+            box-shadow: 20px;
+            align-self: start;
+        }
+        input[type="text"]{
+            width: 100%;
+        }
+        div{
+            margin-left: 0;
         }
        }
            
@@ -68,6 +104,7 @@
     <div>
     <h1 style="color: white;"> SIMPLE CALCULATOR</h1>
     <input type="text" id="display" disabled="" style="background-color: black;color: white;font-size: xx-large;height: 60px;"><br><br>
+    
     <button type="button" value="1" onclick="addToDisplay('1')" style="border-radius: 100%;background-color: white;color: black;">1</button>
     <button type="button" value="2" onclick="addToDisplay('2')" style="border-radius: 100%;background-color: white;color: black;">2</button>
     <button type="button" value="3" onclick="addToDisplay('3')" style="border-radius: 100%;background-color: white;color: black;">3</button>
@@ -90,6 +127,7 @@
     <br>
     <p style="color: white;">By Dev.Prince Okikiola</p>
 </div>
+
 
     <script>
         function addToDisplay(myvalue){
